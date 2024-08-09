@@ -512,11 +512,11 @@ def single_chaizi_compare(info_path, single_top, chaizi_top, comp_file):
     f.close()
 
 def rare_stat(data_path, info_path, prefix_list, out_path):
-    if not os.path.isdir(out_path):
-        os.path.mkdirs(out_path)
+    os.makedirs(out_path, exist_ok=True)
+    
     stat_single_match(data_path, prefix_list, os.path.join(out_path, 'result_single_word.txt'), os.path.join(out_path, 'query_single_all.txt'))
     stat_chaizi_match(data_path, prefix_list, os.path.join(out_path, 'query_chaizi_freq.txt'), os.path.join(out_path, 'query_chaizi_all.txt'))
-    make_chaizi_data([os.path.join(info_path, 'chaizi-gbk.txt'), os.path.join(info_path, 'chaizi-gbk.csv')], os.path.join(out_path, 'query_chaizi_freq.txt'), os.path.join(out_path, 'result_chaizi_freq.txt'), os.path.join(out_path, 'result_chaizi_freq.log'))
+    make_chaizi_data([os.path.join(info_path, 'chaizi-utf8.txt'), os.path.join(info_path, 'chaizi-utf8.csv')], os.path.join(out_path, 'query_chaizi_freq.txt'), os.path.join(out_path, 'result_chaizi_freq.txt'), os.path.join(out_path, 'result_chaizi_freq.log'))
     sort_chaizi(os.path.join(out_path, 'result_chaizi_freq.txt'), os.path.join(out_path, 'result_chaizi_word.txt'), os.path.join(out_path, 'result_chaizi_query.txt'))
     check_level(info_path, os.path.join(out_path, 'result_chaizi_word.txt'), os.path.join(out_path, 'result_chaizi_word_level.txt'))
     check_level(info_path, os.path.join(out_path, 'result_single_word.txt'), os.path.join(out_path, 'result_single_word_level.txt'))
