@@ -20,9 +20,15 @@ def test_acc(test_filename, result_filename):
     j_data = json.load(f)
     o_data = []
     time_start = time.time()  # 记录开始时间
-
+    right = 0
+    total = 0
     for each in j_data:
         response, history = model.chat(tokenizer, each['conversations'][0]['value'], history=None)
+        if response == each['conversations'][1]['value']:
+            right += 1
+        else:
+            print('!', each['conversations'][0]['value'], each['conversations'][1]['value'], response)
+        total += 1
         data ={
             "id": each['id'],
             "conversations": [
@@ -37,11 +43,11 @@ def test_acc(test_filename, result_filename):
             ]
         }
         o_data.append(data)
-        print(response)
+        print(total, '/', len(j_data), response)
     time_end = time.time()  # 记录结束时间
     time_sum = time_end - time_start  # 计算的时间差为程序的执行时间，单位为秒/s
-    print(time_sum)
-    print(time_sum / len(j_data))
+    print('time_cost={} time_avg={}'.format(time_sum, time_sum / len(j_data)))
+    print('acc={} ({}/{})'.format(right / len(j_data), right, len(j_data)))
     f_o = open(result_filename, 'w', encoding='utf_8')
     json.dump(o_data, f_o, ensure_ascii=False, indent=4)
     f_o.close()
