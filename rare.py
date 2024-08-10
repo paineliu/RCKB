@@ -526,5 +526,5 @@ def rare_stat(data_path, info_path, prefix_list, out_path):
     chaizi_top = top_100(os.path.join(out_path, 'result_chaizi_word.txt'), os.path.join(out_path, 'result_chaizi_word_top100.txt'))
     single_chaizi_compare(info_path, single_top, chaizi_top, os.path.join(out_path, 'result_single_chaizi_compare.txt'))
 
-    
-rare_stat('./data', './info', ['字读什么', '字念什么', '是什么字', '念什么字', '念什么', '读什么'], './output')
+if __name__ == '__main__':    
+    rare_stat('./data', './info', ['字读什么', '字念什么', '是什么字', '念什么字', '念什么', '读什么'], './output')
