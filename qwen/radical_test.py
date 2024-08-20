@@ -23,4 +23,4 @@ def test_chat(ip, port, message):
 
 if __name__ == "__main__":
 
-    test_chat('127.0.0.1', '8105', "四个火")
+    test_chat('127.0.0.1', '8105', "上面两个方下面一个土")
