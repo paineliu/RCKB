@@ -43,10 +43,15 @@ async def request_validation_exception_handler(request: Request, exc: RequestVal
 class RadicalModel(BaseModel):
     text:str
 
+class RadicalRepData(BaseModel):
+    radicals:str
+    han:str
+    pinyin:str
+    
 class RadicalRepModel(BaseModel):
     code:int = 200
     message:str = "OK"
-    data:str
+    data:RadicalRepData
     
 @app.post("/radical")
 async def getRadical(tokenModel: RadicalModel) ->RadicalRepModel:
