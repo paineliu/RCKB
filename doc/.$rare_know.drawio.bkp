@@ -1,0 +1,55 @@
+<mxfile host="Electron" modified="2024-08-20T01:41:20.426Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/22.1.11 Chrome/114.0.5735.289 Electron/25.9.8 Safari/537.36" etag="MpXmxOeAF1gDKWsk-RgK" version="22.1.11" type="device">
+  <diagram name="Page-1" id="swkfoCyLud2mCSWsFiFS">
+    <mxGraphModel dx="1004" dy="744" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="7XMDrmq2leN32-ooY_FS-12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="7XMDrmq2leN32-ooY_FS-5" target="7XMDrmq2leN32-ooY_FS-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7XMDrmq2leN32-ooY_FS-5" value="添加汉字等级" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="180" y="300" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="7XMDrmq2leN32-ooY_FS-15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="7XMDrmq2leN32-ooY_FS-6" target="7XMDrmq2leN32-ooY_FS-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7XMDrmq2leN32-ooY_FS-6" value="添加拼音" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="440" y="390" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="7XMDrmq2leN32-ooY_FS-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="7XMDrmq2leN32-ooY_FS-7" target="7XMDrmq2leN32-ooY_FS-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7XMDrmq2leN32-ooY_FS-7" value="统计通用度" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="310" y="300" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="7XMDrmq2leN32-ooY_FS-14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="7XMDrmq2leN32-ooY_FS-8" target="7XMDrmq2leN32-ooY_FS-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7XMDrmq2leN32-ooY_FS-8" value="统计常用词" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="440" y="300" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="7XMDrmq2leN32-ooY_FS-16" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="7XMDrmq2leN32-ooY_FS-9" target="7XMDrmq2leN32-ooY_FS-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7XMDrmq2leN32-ooY_FS-9" value="添加组成部件" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="310" y="390" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="7XMDrmq2leN32-ooY_FS-25" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="7XMDrmq2leN32-ooY_FS-10" target="7XMDrmq2leN32-ooY_FS-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7XMDrmq2leN32-ooY_FS-10" value="添加搜索字符串" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="180" y="390" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="7XMDrmq2leN32-ooY_FS-19" value="生僻字知识库" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="390" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="7XMDrmq2leN32-ooY_FS-24" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="7XMDrmq2leN32-ooY_FS-20" target="7XMDrmq2leN32-ooY_FS-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7XMDrmq2leN32-ooY_FS-20" value="生僻字表" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="300" width="100" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
