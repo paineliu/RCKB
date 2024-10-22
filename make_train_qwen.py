@@ -56,5 +56,35 @@ def make_train_dataset(desc_filename, train_pathname):
     json.dump(val_data, f, ensure_ascii=False, indent=4)
     f.close()
 
+def stat_train_dataset(train_pathname):
+    f = open(os.path.join(train_pathname, "radical_train.json"), 'r', encoding='utf-8')
+    train_set = set()
+    train_data = json.load(f)
+    for each in train_data:
+        radicals = each['conversations'][1]['value']
+        train_set.add(radicals)
+    f.close()
+
+    test_set = set()
+    f = open(os.path.join(train_pathname, "radical_test.json"), 'r', encoding='utf-8')
+    test_data = json.load(f)
+    for each in test_data:
+        radicals = each['conversations'][1]['value']
+        test_set.add(radicals)
+    f.close()
+
+    val_set = set()
+    f = open(os.path.join(train_pathname, "radical_dev.json"), 'r', encoding='utf-8')
+    val_data = json.load(f)
+    for each in val_data:
+        radicals = each['conversations'][1]['value']
+        val_set.add(radicals)
+    f.close()
+
+    print(len(train_data) + len(test_data) + len(val_data), len(train_data), len(test_data), len(val_data))
+    print(len(train_set | test_set | val_set), len(train_set), len(test_set), len(val_set), len(test_set - train_set))
+
 if __name__ == '__main__':
     make_train_dataset('./output/result_chaizi_freq.txt', './radical_qwen')
+    stat_train_dataset('./qwen/data')
+
