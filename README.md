@@ -1,1 +1,1 @@
-# rareword
+# Rare Characters Knowledge Base
